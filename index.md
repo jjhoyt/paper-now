@@ -1,8 +1,8 @@
 ---
 layout: article
 title: My First Article
-doi: 10.1234/example.1
-date: 2015-03-02
+doi: # e.g. 10.1234/example.1
+date: # e.g. 2015-03-02
 authors:
   - name: First Author
     email: first.author@example.com
