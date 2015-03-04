@@ -49,12 +49,14 @@
         <!-- side column -->
         <div class="column" id="sidebar">
             <!-- publication date -->
-            <div id="published">
-                <h2>Published</h2>
-                <div>
-                    <time itemprop="datePublished" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %-d, %Y' }}</time>
+            {% if page.date %}
+                <div id="published">
+                    <h2>Published</h2>
+                    <div>
+                        <time itemprop="datePublished" datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%B %-d, %Y' }}</time>
+                    </div>
                 </div>
-            </div>
+            {% endif %}
 
             <!-- doi -->
             {% if page.doi %}
